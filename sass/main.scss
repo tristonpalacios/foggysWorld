@@ -72,6 +72,33 @@ body{
     height: 100%;
     overflow: hidden;
 }
+.firstAboutSlide{
+    background-image: url("../images/BacBox.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+.secondAboutSlide{
+    background-image: url("../images/elephant.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+.thirdAboutSlide{
+    background-image: url("../images/blockingTV.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
 .centerText{
     text-align: center;
 }
