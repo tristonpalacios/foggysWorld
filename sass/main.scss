@@ -1,0 +1,97 @@
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors:(
+    "dkBlue": rgb(59, 77, 243),
+    "lightBlue": rgb(62, 124, 242),
+    "yellow": rgb(245, 214, 42),
+    "gold": rgb(255, 186, 18),
+    "red": rgb(232, 60, 67)
+);
+
+$theme-colors: map-merge($custom-theme-colors,$theme-colors);
+
+$navbar-light-brand-color: rgb(59, 77, 243);
+
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+* {
+  font-family: "Bangers", cursive;
+}
+body{
+    width:100%;
+    height: 100%;
+    background: linear-gradient(45deg,red, #E94584, #24AADB , gold,#FFDC18, #FF3706);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
+  }
+  @keyframes gradient {
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+  }
+.homeHero{
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.favHero{
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    overflow: hidden;
+}
+
+.firstSlide{
+    background-image: url("../images/hairCut.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+.secondSlide{
+    background-image: url("../images/Ball.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+.thirdSlide{
+    background-image: url("../images/barkBoc.jpeg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    height: 100%;
+    overflow: hidden;
+}
+.centerText{
+    text-align: center;
+}
+.homeCard{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.favList{
+    display: flex;
+    gap: 10%;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contactForm{
+    text-align: center;
+    margin: 5%;
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
+
